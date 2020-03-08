@@ -13,6 +13,12 @@ public class StrategyThree implements TaxiCost{
         this.waitingTime = waitingTime;
     }
 
+    /**
+     * 花费
+     * @desc 计费规则为默认金额+停车等待金额+长途计费+没公里增收
+     * @return
+     *
+     */
     @Override
     public String billing() {
         String cost="收费";

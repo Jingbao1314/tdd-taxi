@@ -3,7 +3,7 @@ package com.raven.keju.billing;
 import com.raven.keju.utils.MathUtils;
 
 import java.math.BigDecimal;
-
+//策略一
 public class StrategyOne  implements TaxiCost{
     private int cistance;
     private BigDecimal waitingTime;
@@ -12,6 +12,12 @@ public class StrategyOne  implements TaxiCost{
         this.waitingTime = waitingTime;
     }
 
+    /**
+     * 花费
+     * @desc 计费规则为默认金额+停车等待金额
+     * @return
+     *
+     */
     @Override
     public String billing() {
         String cost="收费";
